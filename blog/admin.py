@@ -3,10 +3,15 @@ from blog.models import Post, Category
 # Register your models here.
 
 class PostAdmin(admin.ModelAdmin):
-    pass
+    # pass
+    list_display = ('title', 'short_body', 'created_on', 'last_modified')
+
+    # def show_category(self, obj):
+    #     return "\n".join([c.categories for c in obj.categories_set.all()])
 
 class CategoryAdmin(admin.ModelAdmin):
-    pass
+     pass
+
 
 admin.site.register(Post, PostAdmin)
 admin.site.register(Category, CategoryAdmin)
