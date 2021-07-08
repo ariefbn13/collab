@@ -10,7 +10,7 @@ def blog_index(request):
     }
     return render(request,"blog_index.html",context)
 
-def blog_create(request,category):
+def blog_category(request,category):
     post = Post.objects.filter(
         categories_name_contains=category
     ).order_by(
@@ -20,7 +20,7 @@ def blog_create(request,category):
         "category" : category,
         "post" : post
     }
-    return render(request, "blog_create.html", context)
+    return render(request, "blog_category.html", context)
     
 def blog_detail(request,pk):
     post = Post.objects.get(pk=pk)
