@@ -142,7 +142,3 @@ MEDIA_ROOT = (
 MEDIA_URL = '/media/'
 
 django_heroku.settings(locals())
-<<<<<<< HEAD
-
-=======
->>>>>>> 74bb22c1e37bac7ccc91d7fde62e6aa0656ffb35
