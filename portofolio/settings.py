@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django_dropbox_storage',
     'projects',
     'blog',
 ]
@@ -141,4 +142,13 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
 MEDIA_URL = '/media/'
 
+#DROPBOX
+DEFAULT_FILE_STORAGE = 'django_dropbox_storage.storage.DropboxStorage'
+DROPBOX_CONSUMER_KEY = '0gnrjt7lnevrvyf'
+DROPBOX_CONSUMER_SECRET = 'te5ufoq1ghs6qzx'
+DROPBOX_ACCESS_TOKEN = 'A-jW6mcYiRcAAAAAAAAAAfJ_6iFGrxuQUOlCuUnUoyia9Y29dcChjrv2yI8qgCKi'
+DROPBOX_ROOT_FOLDER = '/Public'
+
 django_heroku.settings(locals())
+
+
