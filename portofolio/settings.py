@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-q_r!x8+mmsn8lv2t3q*iy0#@95lvnjw%m@6x-28yvuu@+0pn&!
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -142,3 +142,4 @@ MEDIA_ROOT = (
 MEDIA_URL = '/media/'
 
 django_heroku.settings(locals())
+
