@@ -128,9 +128,9 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATICFILES_DIRS = (
-    os.path.join(BASE_DIR, 'static'),
+    os.path.join(BASE_DIR, 'static/'),
 )
-#STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles/')
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 # Default primary key field type
@@ -146,8 +146,9 @@ MEDIA_URL = '/media/'
 DEFAULT_FILE_STORAGE = 'django_dropbox_storage.storage.DropboxStorage'
 DROPBOX_CONSUMER_KEY = '0gnrjt7lnevrvyf'
 DROPBOX_CONSUMER_SECRET = 'te5ufoq1ghs6qzx'
-DROPBOX_ACCESS_TOKEN = 'A-jW6mcYiRcAAAAAAAAAAfJ_6iFGrxuQUOlCuUnUoyia9Y29dcChjrv2yI8qgCKi'
+DROPBOX_ACCESS_TOKEN = 'FrUtYeCNSOEAAAAAAAAAAbJbCICswcL40V2h2piPlxJ8EVJtOSqxmtD53i5gU0CE'
 DROPBOX_ROOT_FOLDER = '/Public'
+
 
 django_heroku.settings(locals())
 
