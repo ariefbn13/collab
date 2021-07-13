@@ -8,6 +8,7 @@ colorama==0.4.4
 dj-database-url==0.5.0
 dj-static==0.0.6
 Django==3.2.5
+django-dropbox==0.0.2
 django-dropbox-storage @ git+https://github.com/zahidtokur/django-dropbox-storage.git@bcc986fbff5832ee52dd9986ac5d07d88da273c9
 django-heroku==0.3.1
 django-storages==1.11.1
